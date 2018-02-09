@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Happy_Dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nz9-sz-nTc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-2z-D8S">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="706"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDt-FO-eO0">
+                                        <rect key="frame" x="0.0" y="706" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MFj-E3-NqO"/>
+                                        </constraints>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextDogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdy-d4-c3R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Yyo-2z-D8S" secondAttribute="trailing" id="5eu-sG-d5I"/>
+                                    <constraint firstItem="Yyo-2z-D8S" firstAttribute="leading" secondItem="Nz9-sz-nTc" secondAttribute="leading" id="5tS-po-Pd4"/>
+                                    <constraint firstItem="HDt-FO-eO0" firstAttribute="top" secondItem="Yyo-2z-D8S" secondAttribute="bottom" id="JND-Ow-J56"/>
+                                    <constraint firstItem="Yyo-2z-D8S" firstAttribute="top" secondItem="Nz9-sz-nTc" secondAttribute="top" id="Mqg-s0-AuT"/>
+                                    <constraint firstItem="HDt-FO-eO0" firstAttribute="leading" secondItem="Nz9-sz-nTc" secondAttribute="leading" id="X1D-Co-xf1"/>
+                                    <constraint firstAttribute="trailing" secondItem="HDt-FO-eO0" secondAttribute="trailing" id="n63-gT-V7W"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Nz9-sz-nTc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qbz-Jt-ufC"/>
+                            <constraint firstAttribute="trailing" secondItem="Nz9-sz-nTc" secondAttribute="trailing" id="TbC-42-Lkw"/>
+                            <constraint firstItem="Nz9-sz-nTc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YAL-7S-vjK"/>
+                            <constraint firstAttribute="bottom" secondItem="Nz9-sz-nTc" secondAttribute="bottom" id="xdh-K0-UTK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogPic" destination="Yyo-2z-D8S" id="Mtk-hc-d4i"/>
+                        <outlet property="nextDogButton" destination="HDt-FO-eO0" id="ljM-Jb-GxX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
