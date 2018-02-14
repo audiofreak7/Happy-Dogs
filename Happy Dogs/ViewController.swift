@@ -127,7 +127,7 @@ class ViewController: UIViewController {
 
     @IBAction func nextDogButton(_ sender: UIButton) {
         getNextDogPic(url: dogDataURL)
-        getBreedList(url: randomDogURL)
+        // getBreedList(url: randomDogURL)
     }
     
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5eQ-hL-fYH">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,52 +9,132 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Thonburi.ttc">
+            <string>Thonburi</string>
+        </array>
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="QeC-hc-oqH">
+            <objects>
+                <viewController id="5eQ-hL-fYH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ssv-Eh-FdS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car Dog" translatesAutoresizingMaskIntoConstraints="NO" id="HxD-hY-pbq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i3w-uA-57C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo with Text" translatesAutoresizingMaskIntoConstraints="NO" id="6hu-Td-V0m">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,000+ Pictures of Cute Dogs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFx-XL-46V">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Start to see Pics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAD-ZE-rbR">
+                                        <rect key="frame" x="0.0" y="333.5" width="375" height="167"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHC-1V-3l6">
+                                        <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                        <state key="normal" image="button_start">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="2am-0G-GWQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pHC-1V-3l6" secondAttribute="trailing" id="93x-gH-Jre"/>
+                                    <constraint firstItem="pHC-1V-3l6" firstAttribute="height" secondItem="6hu-Td-V0m" secondAttribute="height" id="CTO-us-kxG"/>
+                                    <constraint firstAttribute="trailing" secondItem="OFx-XL-46V" secondAttribute="trailing" id="Ecy-UV-BBu"/>
+                                    <constraint firstAttribute="trailing" secondItem="MAD-ZE-rbR" secondAttribute="trailing" id="Eut-Pa-1fl"/>
+                                    <constraint firstItem="OFx-XL-46V" firstAttribute="leading" secondItem="i3w-uA-57C" secondAttribute="leading" id="SFe-DT-h0t"/>
+                                    <constraint firstItem="6hu-Td-V0m" firstAttribute="leading" secondItem="i3w-uA-57C" secondAttribute="leading" id="XJ9-rd-gb1"/>
+                                    <constraint firstItem="OFx-XL-46V" firstAttribute="height" secondItem="6hu-Td-V0m" secondAttribute="height" id="c8e-bB-EDd"/>
+                                    <constraint firstItem="MAD-ZE-rbR" firstAttribute="leading" secondItem="i3w-uA-57C" secondAttribute="leading" id="fKG-Jf-f4g"/>
+                                    <constraint firstItem="pHC-1V-3l6" firstAttribute="leading" secondItem="i3w-uA-57C" secondAttribute="leading" id="gGs-LA-l77"/>
+                                    <constraint firstItem="MAD-ZE-rbR" firstAttribute="height" secondItem="6hu-Td-V0m" secondAttribute="height" id="oMm-Hw-gXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="6hu-Td-V0m" secondAttribute="trailing" id="yyF-Zg-Wry"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i3w-uA-57C" secondAttribute="trailing" id="1dM-61-ZdS"/>
+                            <constraint firstItem="i3w-uA-57C" firstAttribute="top" secondItem="ssv-Eh-FdS" secondAttribute="top" id="PkV-yw-ScA"/>
+                            <constraint firstItem="HxD-hY-pbq" firstAttribute="leading" secondItem="FGS-zd-UMh" secondAttribute="leading" id="QNV-E4-c17"/>
+                            <constraint firstItem="HxD-hY-pbq" firstAttribute="top" secondItem="ssv-Eh-FdS" secondAttribute="top" id="QNY-wc-bYv"/>
+                            <constraint firstItem="i3w-uA-57C" firstAttribute="leading" secondItem="ssv-Eh-FdS" secondAttribute="leading" id="kIr-Pr-NIT"/>
+                            <constraint firstItem="HxD-hY-pbq" firstAttribute="bottom" secondItem="FGS-zd-UMh" secondAttribute="bottom" id="pD2-Gr-c1N"/>
+                            <constraint firstAttribute="bottom" secondItem="i3w-uA-57C" secondAttribute="bottom" id="uD7-f7-DaS"/>
+                            <constraint firstItem="HxD-hY-pbq" firstAttribute="trailing" secondItem="FGS-zd-UMh" secondAttribute="trailing" id="w3l-Tp-CyN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FGS-zd-UMh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwd-cp-rcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="108.39580209895054"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Happy_Dogs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nz9-sz-nTc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-2z-D8S">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="706"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDt-FO-eO0">
-                                        <rect key="frame" x="0.0" y="706" width="414" height="30"/>
-                                        <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="MFj-E3-NqO"/>
-                                        </constraints>
-                                        <state key="normal" title="Next">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextDogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdy-d4-c3R"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-bn-YXf">
+                                <rect key="frame" x="0.0" y="280" width="375" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Yyo-2z-D8S" secondAttribute="trailing" id="5eu-sG-d5I"/>
-                                    <constraint firstItem="Yyo-2z-D8S" firstAttribute="leading" secondItem="Nz9-sz-nTc" secondAttribute="leading" id="5tS-po-Pd4"/>
-                                    <constraint firstItem="HDt-FO-eO0" firstAttribute="top" secondItem="Yyo-2z-D8S" secondAttribute="bottom" id="JND-Ow-J56"/>
-                                    <constraint firstItem="Yyo-2z-D8S" firstAttribute="top" secondItem="Nz9-sz-nTc" secondAttribute="top" id="Mqg-s0-AuT"/>
-                                    <constraint firstItem="HDt-FO-eO0" firstAttribute="leading" secondItem="Nz9-sz-nTc" secondAttribute="leading" id="X1D-Co-xf1"/>
-                                    <constraint firstAttribute="trailing" secondItem="HDt-FO-eO0" secondAttribute="trailing" id="n63-gT-V7W"/>
+                                    <constraint firstAttribute="height" constant="38" id="1Ph-2E-qtK"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-2z-D8S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDt-FO-eO0">
+                                <rect key="frame" x="134" y="577" width="107" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="6E7-By-zsc"/>
+                                </constraints>
+                                <state key="normal" image="button_next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextDogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdy-d4-c3R"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Nz9-sz-nTc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qbz-Jt-ufC"/>
-                            <constraint firstAttribute="trailing" secondItem="Nz9-sz-nTc" secondAttribute="trailing" id="TbC-42-Lkw"/>
-                            <constraint firstItem="Nz9-sz-nTc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YAL-7S-vjK"/>
-                            <constraint firstAttribute="bottom" secondItem="Nz9-sz-nTc" secondAttribute="bottom" id="xdh-K0-UTK"/>
+                            <constraint firstItem="aGj-bn-YXf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2Nx-Z4-4gN"/>
+                            <constraint firstItem="aGj-bn-YXf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35" id="Dxc-pL-Ph6"/>
+                            <constraint firstItem="Yyo-2z-D8S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EHS-Gf-skz"/>
+                            <constraint firstItem="Yyo-2z-D8S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gk6-HM-aGU"/>
+                            <constraint firstAttribute="bottom" secondItem="Yyo-2z-D8S" secondAttribute="bottom" id="HK2-H2-UrH"/>
+                            <constraint firstItem="Yyo-2z-D8S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bQ1-C2-Cup"/>
+                            <constraint firstItem="HDt-FO-eO0" firstAttribute="centerX" secondItem="aGj-bn-YXf" secondAttribute="centerX" id="hvu-5e-rGl"/>
+                            <constraint firstItem="aGj-bn-YXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ock-L5-9J8"/>
+                            <constraint firstAttribute="bottom" secondItem="HDt-FO-eO0" secondAttribute="bottom" constant="43" id="zAE-0m-mIv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,7 +145,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.39130434782609" y="117.39130434782609"/>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Car Dog" width="1230" height="1279"/>
+        <image name="Logo with Text" width="1600" height="1200"/>
+        <image name="button_next" width="107" height="46"/>
+        <image name="button_start" width="125" height="46"/>
+    </resources>
 </document>
