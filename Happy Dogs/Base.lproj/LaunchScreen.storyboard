@@ -18,11 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo with Text" translatesAutoresizingMaskIntoConstraints="NO" id="hN8-5r-AAV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Image" translatesAutoresizingMaskIntoConstraints="NO" id="hN8-5r-AAV">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hN8-5r-AAV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="m37-gU-V7c"/>
                             <constraint firstItem="hN8-5r-AAV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="s8O-wG-OCq"/>
@@ -38,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo with Text" width="1600" height="1200"/>
+        <image name="Launch Image" width="1230" height="1279"/>
     </resources>
 </document>
